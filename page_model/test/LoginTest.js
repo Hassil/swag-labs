@@ -20,5 +20,5 @@ test('Login with a invalid user', async t => {
         .click(LoginPage.btnLogin)
 
         await t.expect(LoginPage.msgFailedLogin.exists).ok()
-        await t.expect(LoginPage.msgFailedLogin.innerText).eql('MensajeEpic sadface: Username and password do not match any user in this service')
+        await t.expect(LoginPage.msgFailedLogin.innerText).eql('Epic sadface: Username and password do not match any user in this service')
 })
