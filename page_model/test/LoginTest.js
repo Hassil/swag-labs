@@ -13,7 +13,7 @@ test('Login with a valid user', async t => {
         await t.expect(ProductsPage.labelProducts.exists).ok()
 })
 
-test('Login with a invalid user', async t => {
+test('Login with a invalid user', async tx => {
     await t
         .typeText(LoginPage.txtUsername,'standard_')
         .typeText(LoginPage.txtPassword,'secret_sauce')
