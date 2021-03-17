@@ -19,6 +19,6 @@ test('Login with a invalid user', async t => {
         .typeText(LoginPage.txtPassword,'secret_sauce')
         .click(LoginPage.btnLogin)
 
-       const x =  await t.expect(LoginPage.msgFailedLogin.innerText)
-       console.log('Mensaje' + x)
+        await t.expect(LoginPage.msgFailedLogin.exists).ok()
+        await t.expect(LoginPage.msgFailedLogin.innerText).eql('MensajeEpic sadface: Username and password do not match any user in this service')
 })
