@@ -10,7 +10,7 @@ test('Login with a valid user', async t => {
         .typeText(LoginPage.txtPassword,'secret_sauce')
         .click(LoginPage.btnLogin)
 
-        await t.expect(ProductsPage.labelProducts.exist).ok()
+        await t.expect(ProductsPage.labelProducts.exists).ok()
 })
 
 test('Login with a invalid user', async t => {
@@ -19,5 +19,6 @@ test('Login with a invalid user', async t => {
         .typeText(LoginPage.txtPassword,'secret_sauce')
         .click(LoginPage.btnLogin)
 
-        await t.expect(ProductsPage.labelProducts.exist).ok()
+       const x =  await t.expect(LoginPage.msgFailedLogin.innerText)
+       console.log('Mensaje' + x)
 })

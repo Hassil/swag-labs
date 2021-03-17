@@ -5,7 +5,7 @@ class LoginPage {
         this.txtUsername = Selector('#user-name')
         this.txtPassword = Selector('#password')
         this.btnLogin = Selector('#login-button')
-        this.msgFailedLogin = Selector('.error-button')
+        this.msgFailedLogin = Selector('h3[data-test]')
     }
 }
 
