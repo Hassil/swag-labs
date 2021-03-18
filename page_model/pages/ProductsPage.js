@@ -9,6 +9,7 @@ class ProductsPage {
         this.btnAddToCart = Selector('.btn_primary')
         this.btnRemoveProduct = Selector('.btn_secondary')
         this.containerProduct = Selector('.inventory_item')
+        this.linkNameProduct  = Selector('.inventory_item_name')
 
     }
 }

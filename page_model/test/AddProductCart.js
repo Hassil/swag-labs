@@ -30,6 +30,9 @@ test('Add  products', async t => {
         for(let i = 0; i < elementsCount; i++) {
             const elementSelector = elements.nth(i);
             console.log(elementSelector)
-                }
+            console.log(elementSelector.ProductsPage.linkNameProduct.innerText)
+            const sanity = await elementSelector();
+            console.log(elementSelector)
+            }
 
 })
