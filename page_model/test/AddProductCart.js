@@ -25,7 +25,7 @@ test('Add  products', async t => {
         await t.expect(ProductsPage.labelProducts.exists).ok()
         
 
-        const elements = Selector('.btn_primary');
+        const elements = ProductsPage.containerProduct.count
         var elementsCount = await elements.count;
         for(let i = 0; i < elementsCount; i++) {
             const elementSelector = elements.nth(i);

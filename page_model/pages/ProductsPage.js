@@ -8,6 +8,7 @@ class ProductsPage {
         this.imgCart = Selector('#shopping_cart_container')
         this.btnAddToCart = Selector('.btn_primary')
         this.btnRemoveProduct = Selector('.btn_secondary')
+        this.containerProduct = Selector('.inventory_item')
 
     }
 }
